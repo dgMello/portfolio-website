@@ -1,0 +1,9 @@
+* {
+  border: 1px solid red;
+}
+header {
+  border-bottom: 5px solid #7d97ad;
+}
+#ID {
+  float: left;
+}
