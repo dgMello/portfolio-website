@@ -55,9 +55,7 @@ header {
 /* This code formats the projects element, which contains all the projects in it.. */
 .projects-section {
   width: 100%;
-  display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: center;
   justify-content: center;
 }
 /* This code formats the project element. */
@@ -91,12 +89,13 @@ header {
   margin-right: 45%;
   margin-top: 5px;
 }
-
+/* This code changes the format when the width is 900px or less. */
 @media screen and (max-width: 900px) {
   .project-name {
     font-size: 1.5em;
   }
-/* This code changes the format when the width is 750 or less. */
+}
+/* This code changes the format when the width is 780px or less. */
 @media screen and (max-width: 780px) {
   .projects-section {
     display: block;
@@ -121,7 +120,7 @@ header {
     text-align: center;
   }
 }
-/* This code changes the format when the width is 455px or less. */
+/* This code changes the format when the width is 600px or less. */
 @media screen and (max-width: 600px) {
   #name {
     font-size: 3em;
@@ -130,7 +129,7 @@ header {
     display: none;
   }
   .project {
-    width: 100%;
+    width: 90%;
     height: 40%;
   }
 }
