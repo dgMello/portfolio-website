@@ -1,12 +1,12 @@
 /* CSS code for my personal porfolio webiste */
 body {
-  background-color: #C5CDF2;
+  background-color: #c5cdf2;
 }
 /* This code formats the header of the website.*/
 header {
   margin-bottom: 20px;
   position: static;
-  height: 25%;
+  height: 230px;
   width: 100%;
 }
 /* This code formats the only section in the website. */
@@ -17,13 +17,13 @@ header {
 .header-id {
   text-transform: uppercase;
   float: right;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   height: 100%;
 }
 /* This code formats the name in the header only. */
 #name {
   font-size: 5em;
-  margin-top: 40px;
+  margin-top: 60px;
   margin-bottom: 10px;
   font-stretch: expanded;
   font-weight: lighter;
@@ -37,19 +37,27 @@ header {
 .header-picture {
   margin: 15px;
   border-radius: 50%;
+  width: 12%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  float: left;
 }
 /* This code formas the main picture in the main section of the website. */
 .main-picture {
   width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
   padding-top: 40px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 /* This code formats the heading in the main section of the website. */
 .project-section-title {
   font-size: 2.5em;
   font-family: helvetica;
   font-weight: lighter;
-  color: #4298A4;
+  color: #4298a4;
   text-align: center;
 }
 /* This code formats the projects element, which contains all the projects in it.. */
@@ -61,15 +69,19 @@ header {
 /* This code formats the project element. */
 .project {
   width: 25%;
-  height: 340px;
+  height: 37%;
   margin: 2%;
   border: 1px solid black;
   background-color: white;
 }
 /* This code formats all project pictuse in the project element */
 .project-picture {
-  height: 60%;
+  height: auto;
   width: 100%;
+  max-width: 100%;
+  display: block;
+
+
 }
 /* This code formats the project name in project elements. */
 .project-name {
@@ -92,44 +104,23 @@ header {
 /* This code changes the format when the width is 900px or less. */
 @media screen and (max-width: 900px) {
   .project-name {
-    font-size: 1.5em;
+    font-size: 1em;
   }
-}
-/* This code changes the format when the width is 780px or less. */
-@media screen and (max-width: 780px) {
   .projects-section {
     display: block;
-  }
-  .main-picture {
-    display: none;
-  }
-  .header-picture{
-    display: none;
+    margin: auto;
   }
   .project {
-    width: 60%;
-    height: 220px;
-    margin-left: auto;
+    width: 80%;
+    margin-bottom: 30px;
+    margin-top: 30px;
     margin-right: auto;
-  }
-  .header-id {
-    float: none;
-    text-align: center;
-  }
-  #title {
-    text-align: center;
+    margin-left: auto;
   }
 }
 /* This code changes the format when the width is 600px or less. */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 740px) {
   #name {
-    font-size: 3em;
-  }
-  .project-picture {
-    display: none;
-  }
-  .project {
-    width: 90%;
-    height: 40%;
+    font-size: 2.6em;
   }
 }
