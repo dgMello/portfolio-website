@@ -4,7 +4,7 @@ body {
 }
 /* This code formats the header of the website.*/
 header {
-  margin-bottom: 20px;
+  margin-bottom: 1%;
   position: static;
   height: 230px;
   width: 100%;
@@ -18,12 +18,12 @@ header {
   text-transform: uppercase;
   float: right;
   font-family: "Raleway", sans-serif;
-  height: 100%;
+  margin: auto;
 }
 /* This code formats the name in the header only. */
 #name {
-  font-size: 5em;
-  margin-top: 60px;
+  font-size: 4.8em;
+  padding-top: 10%;
   margin-bottom: 10px;
   font-stretch: expanded;
   font-weight: lighter;
@@ -35,9 +35,9 @@ header {
 }
 /* This code formats my personal picure in the header. */
 .header-picture {
-  margin: 15px;
+  margin: 1%;
   border-radius: 50%;
-  width: 12%;
+  width: 200px;
   height: auto;
   max-width: 100%;
   display: block;
@@ -49,7 +49,7 @@ header {
   max-width: 100%;
   height: auto;
   display: block;
-  padding-top: 40px;
+  padding-top: 2%;
   padding-bottom: 10px;
 }
 /* This code formats the heading in the main section of the website. */
@@ -59,6 +59,7 @@ header {
   font-weight: lighter;
   color: #4298a4;
   text-align: center;
+  margin-top: 1.5%;
 }
 /* This code formats the projects element, which contains all the projects in it.. */
 .projects-section {
@@ -80,8 +81,6 @@ header {
   width: 100%;
   max-width: 100%;
   display: block;
-
-
 }
 /* This code formats the project name in project elements. */
 .project-name {
@@ -118,9 +117,45 @@ header {
     margin-left: auto;
   }
 }
-/* This code changes the format when the width is 600px or less. */
-@media screen and (max-width: 740px) {
+/* This code changes the format when the width is 770px or less. */
+@media screen and (max-width: 770px) {
   #name {
-    font-size: 2.6em;
+    font-size: 3em;
+  }
+  .header-picture {
+    width: 145px;
+  }
+  header {
+    height: 170px;
+  }
+}
+/* This code changes the format when the width is 560px or less. */
+@media screen and (max-width: 560px) {
+  #name {
+    font-size: 2em;
+  }
+  #title {
+    font-size: .8em;
+  }
+  .header-picture {
+    width: 105px;
+  }
+  header {
+    height: 120px;
+  }
+}
+/* This code changes the format when the width is 405px or less. */
+@media screen and (max-width: 405px) {
+  #name {
+    font-size: 1.6em;
+  }
+  #title {
+    font-size: .6em;
+  }
+  .header-picture {
+    width: 80px;
+  }
+  header {
+    height: 110px;
   }
 }
